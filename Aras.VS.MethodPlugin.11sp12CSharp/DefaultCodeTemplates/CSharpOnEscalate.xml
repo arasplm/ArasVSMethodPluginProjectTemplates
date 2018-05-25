@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <default_code_template templateName="CSharp" eventData="OnEscalate">
 				<wrapper_code>
 						<![CDATA[ 
