@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aras.VS.MethodPlugin.11sp11
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aras.VS.MethodPlugin.11sp12CSharp", "Aras.VS.MethodPlugin.11sp12CSharp\Aras.VS.MethodPlugin.11sp12CSharp.csproj", "{8AA47666-149F-4789-A489-A7FF5685B6FF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aras.VS.MethodPlugin.11sp14CSharp", "Aras.VS.MethodPlugin.11sp14CSharp\Aras.VS.MethodPlugin.11sp14CSharp.csproj", "{C50A5446-9570-4193-82B6-5A185E3C384D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{8AA47666-149F-4789-A489-A7FF5685B6FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8AA47666-149F-4789-A489-A7FF5685B6FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8AA47666-149F-4789-A489-A7FF5685B6FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C50A5446-9570-4193-82B6-5A185E3C384D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C50A5446-9570-4193-82B6-5A185E3C384D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C50A5446-9570-4193-82B6-5A185E3C384D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C50A5446-9570-4193-82B6-5A185E3C384D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
