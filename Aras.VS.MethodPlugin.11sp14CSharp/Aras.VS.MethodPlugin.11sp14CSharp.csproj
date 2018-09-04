@@ -91,8 +91,6 @@
   <ItemGroup>
     <Compile Include="PartialPathAttribute.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ServerMethods\MethodExampleClass.cs" />
-    <Compile Include="ServerMethods\MethodExampleTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="ArasLibs\Aras.Analyzers.dll" />
@@ -137,6 +135,9 @@
   <ItemGroup>
     <None Include="packages.config" />
     <None Include="Rulesets\Aras.All.Rules.ruleset" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ServerMethods\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

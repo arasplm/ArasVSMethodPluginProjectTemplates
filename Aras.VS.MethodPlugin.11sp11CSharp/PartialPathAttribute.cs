@@ -6,12 +6,19 @@ using System.Threading.Tasks;
 
 namespace Common
 {
-	public class PartialPathAttribute : Attribute
-	{
-		private string path;
-		public PartialPathAttribute(string path)
-		{
-			this.path = path;
-		}
-	}
+    [System.AttributeUsage(System.AttributeTargets.All)]
+    public sealed class PartialPathAttribute : Attribute
+    {
+        private readonly string path;
+
+        public string Path
+        {
+            get { return path; }
+        }
+
+        public PartialPathAttribute(string path)
+        {
+            this.path = path;
+        }
+    }
 }
