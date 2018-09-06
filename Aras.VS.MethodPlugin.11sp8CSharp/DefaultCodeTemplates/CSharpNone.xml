@@ -31,7 +31,7 @@ namespace $(pkgname)
         {
 // start your code inside region MethodCode - DO NOT CHANGE CODE ABOVE
 #region MethodCode
-            return null;
+            return this;
 #endregion MethodCode
 // end your code inside region MethodCode - DO NOT CHANGE CODE BELOW
         }
@@ -50,10 +50,10 @@ using NUnit.Framework;
 namespace  $(pkgname)
 {
     [TestFixture]
-    public class  $(pkgname)Tests
+    public static class  $(pkgname)Tests
     {
         [Test]
-        public void  $(pkgname)ItemMethod_ShouldReturnNull()
+        public static void  $(pkgname)ItemMethodShouldReturnNull()
         {
             // Arrange
             var serverConnectionMock = Substitute.For<IServerConnection>();
@@ -72,7 +72,7 @@ namespace  $(pkgname)
         ///// <param name="path">Path to context file for related method</param>
         ///// <returns></returns>
         //[TestCase("<path>")]
-        //public void $(pkgname)ItemMethod_ShouldReturnNull(string path)
+        //public static void $(pkgname)ItemMethodShouldReturnNull(string path)
         //{
         //    // Arrange
         //    var serverConnectionMock = Substitute.For<IServerConnection>();

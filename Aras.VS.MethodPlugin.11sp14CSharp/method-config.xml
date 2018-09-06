@@ -383,32 +383,35 @@ namespace $(pkgname)
     public class $(clsname): $(interfacename)
     {
 #if EventDataIsAvailable
-        public void $(fncname)(IServerConnection InnovatorServerASP, XmlDocument inDom, $(EventDataClass) eventData, XmlDocument outDom)
+        public void $(fncname)(IServerConnection innovatorObjectArg, XmlDocument inDom, $(EventDataClass) eventData, XmlDocument outDom)
 #else
-        public void $(fncname)(IServerConnection InnovatorServerASP, XmlDocument inDom, XmlDocument outDom)
+        public void $(fncname)(IServerConnection innovatorObjectArg, XmlDocument inDom, XmlDocument outDom)
 #endif
         {
-          ItemMethod inItem = null;
-          Item outItem = null;
-          inItem = new ItemMethod(InnovatorServerASP);
-          inItem.dom = inDom;
-          XmlNodeList nodes = inDom.SelectNodes("//Item[not(ancestor::node()[local-name()='Item'])]");
-          if (nodes.Count == 1)
-          {
-              inItem.node = (XmlElement)nodes[0];
-          }
-          else
-          {
-              inItem.node = null;
-              inItem.nodeList = nodes;
-          }
+        ItemMethod inItem = null;
+        Item outItem = null;
+        inItem = new ItemMethod(innovatorObjectArg);
+        if (inDom != null)
+        {
+            inItem.dom = inDom;
+            XmlNodeList nodes = inDom.SelectNodes("//Item[not(ancestor::node()[local-name()='Item'])]");
+            if (nodes.Count == 1)
+            {
+                inItem.node = (XmlElement)nodes[0];
+            }
+            else
+            {
+                inItem.node = null;
+                inItem.nodeList = nodes;
+            }
+        }
 
 #if EventDataIsAvailable
       outItem = inItem.methodCode(eventData);
 #else
       outItem = inItem.methodCode();
 #endif
-      if (outItem != null)
+      if (outItem != null && outDom != null)
       {
           outDom.ReplaceChild(outDom.ImportNode(outItem.dom.DocumentElement, true), outDom.FirstChild);
       }
@@ -447,7 +450,7 @@ namespace $(pkgname)
 	  }
 
 		public void $(fncname)(
-			IServerConnection InnovatorServerASP,
+			IServerConnection innovatorObjectArg,
 			XmlDocument inDom,
 #if EventDataIsAvailable
 			$(EventDataClass) eventData,
@@ -455,7 +458,7 @@ namespace $(pkgname)
 			XmlDocument outDom
 			)
     {
-		Aras.Server.Core.IContextState RequestState = ((Aras.Server.Core.IOMConnection) InnovatorServerASP).CCO.RequestState;
+		Aras.Server.Core.IContextState RequestState = ((Aras.Server.Core.IOMConnection) innovatorObjectArg).CCO.RequestState;
 		$(MethodCode)
     }
   }
