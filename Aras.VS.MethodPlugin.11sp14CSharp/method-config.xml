@@ -16,8 +16,9 @@
 		<name>$(binpath)/Conversion.Base.dll</name>
 		<name>$(binpath)/Aras.TDF.Base.dll</name>
 		<name>$(binpath)/Aras.ES.dll</name>
-	  <name>$(binpath)/Aras.Analyzers.dll</name>
-	</ReferencedAssemblies>
+	  	<name>$(binpath)/Aras.Analyzers.dll</name>
+    		<name>$(binpath)/Aras.TreeGridView</name>
+  </ReferencedAssemblies>
 
 	<Support dialect="VB" template="VBScript" compiler="Microsoft.VisualBasic.VBCodeProvider"/>
 	<Support dialect="VBScript" template="VBScript" compiler="Microsoft.VisualBasic.VBCodeProvider"/>
@@ -441,6 +442,8 @@ namespace $(pkgname)
 {
   public class $(clsname): $(interfacename)
   {
+    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Performance", "CA1822:MarkMembersAsStatic")]
+    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
 	  private System.Web.HttpContext InnovatorContext
 	  {
 		  get
@@ -640,6 +643,7 @@ namespace $(pkgname)
 {
 public class $(clsname) : LocalConflictDetectionRule
 {
+[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
 	Aras.Server.Core.CallContext CCO;
 
 	public $(clsname)(IServerConnection serverConnection, String name)
@@ -822,7 +826,9 @@ namespace $(pkgname)
 {
 	public class $(clsname) : IEnvironmentAttributeMethod
 	{
+    		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
 		private readonly Aras.Server.Core.CallContext CCO;
+    		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
 		private readonly Innovator Innovator;
 
 		public $(clsname)(IServerConnection connection, Aras.Server.Core.CallContext callContext)

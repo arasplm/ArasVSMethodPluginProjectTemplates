@@ -441,6 +441,8 @@ namespace $(pkgname)
 {
   public class $(clsname): $(interfacename)
   {
+    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Performance", "CA1822:MarkMembersAsStatic")]
+    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
 	  private System.Web.HttpContext InnovatorContext
 	  {
 		  get
@@ -640,6 +642,7 @@ namespace $(pkgname)
 {
 public class $(clsname) : LocalConflictDetectionRule
 {
+[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
 	Aras.Server.Core.CallContext CCO;
 
 	public $(clsname)(IServerConnection serverConnection, String name)
@@ -737,6 +740,7 @@ namespace $(pkgname)
 {
 	public class $(clsname) : IBuilderMethod
 	{
+    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Performance", "CA1822:MarkMembersAsStatic")]
 		public BuilderMethodResult Execute(BuilderMethodArguments args)
 		{
 			$(MethodCode)
