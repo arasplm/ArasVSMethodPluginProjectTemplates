@@ -14,7 +14,7 @@ public override string[] GetGuidsItemDependsOn()
     throw new NotImplementedException();
 }
 
-[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1002:DoNotExposeGenericLists")][System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1002:DoNotExposeGenericLists")]
+[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1002:DoNotExposeGenericLists")]
 public override List<string> GetItemTypeNamesItemDependsOn()
 {
     throw new NotImplementedException();

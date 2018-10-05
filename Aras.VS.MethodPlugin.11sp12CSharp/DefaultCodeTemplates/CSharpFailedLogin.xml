@@ -52,7 +52,7 @@ namespace  $(pkgname)
     public static class  $(pkgname)Tests
     {
         [Test]
-        public void  $(pkgname)ItemMethodShouldReturnNull()
+        public static void  $(pkgname)ItemMethodShouldReturnNull()
         {
             // Arrange
             var serverConnectionMock = Substitute.For<IServerConnection>();
@@ -71,7 +71,7 @@ namespace  $(pkgname)
         ///// <param name="path">Path to context file for related method</param>
         ///// <returns></returns>
         //[TestCase("<path>")]
-        //public void $(pkgname)ItemMethodShouldReturnNull(string path)
+        //public static void $(pkgname)ItemMethodShouldReturnNull(string path)
         //{
         //    // Arrange
         //    var serverConnectionMock = Substitute.For<IServerConnection>();

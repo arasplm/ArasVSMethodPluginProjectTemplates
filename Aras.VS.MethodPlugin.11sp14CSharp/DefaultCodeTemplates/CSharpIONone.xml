@@ -30,11 +30,7 @@
 				[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1059:MembersShouldNotExposeCertainConcreteTypes", MessageId = "System.Xml.XmlNode")]
 				[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Performance", "CA1822:MarkMembersAsStatic")]
 				public void $(pkgname)ItemMethod(IServerConnection innovatorObjectArg, XmlDocument inDom, XmlDocument outDom, 
-					Aras.Server.Core.IContextState RequestState
-				#if EventDataIsAvailable
-			      ,Aras.Workflow.OnActivateEventArgs eventData
-				#endif
-			)
+					Aras.Server.Core.IContextState RequestState)
 				{
 		// start your code inside region MethodCode - DO NOT CHANGE CODE ABOVE
 		#region MethodCode

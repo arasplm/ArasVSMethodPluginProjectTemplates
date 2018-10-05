@@ -32,7 +32,7 @@
 				public void $(pkgname)ItemMethod(IServerConnection innovatorObjectArg, XmlDocument inDom, XmlDocument outDom, 
 					Aras.Server.Core.IContextState RequestState
 				#if EventDataIsAvailable
-			      ,Aras.Workflow.OnActivateEventArgs eventData
+			      ,Aras.Server.Core.SuccessfulLoginEventArgs eventData
 				#endif
 			)
 				{
