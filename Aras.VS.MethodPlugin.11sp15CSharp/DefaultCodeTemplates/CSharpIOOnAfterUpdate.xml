@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<default_code_template templateName="CSharpInOut" eventData="OnAfterUpdate">
+	<wrapper_code>
+    <![CDATA[$(pkgname)ItemMethod(innovatorObjectArg, inDom, outDom, RequestState
+        #if EventDataIsAvailable
+			    ,eventData
+        # endif
+        );]]>
+	</wrapper_code>
+	<simple_code>
+		<source_code>
+		<![CDATA[using Aras.IOM;
+		using System;
+		using System.Collections;
+		using System.Collections.Generic;
+		using System.Data;
+		using System.Globalization;
+		using System.IO;
+		using System.Linq;
+		using System.Net;
+		using System.Text;
+		using System.Web;
+		using System.Web.SessionState;
+		using System.Xml;
+
+		namespace $(pkgname)
+		{
+			public partial class $(clsname)
+			{
+				[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1059:MembersShouldNotExposeCertainConcreteTypes", MessageId = "System.Xml.XmlNode")]
+				[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Performance", "CA1822:MarkMembersAsStatic")]
+				public void $(pkgname)ItemMethod(IServerConnection innovatorObjectArg, XmlDocument inDom, XmlDocument outDom, 
+					Aras.Server.Core.IContextState RequestState
+				#if EventDataIsAvailable
+			      ,Aras.Server.Core.OnAfterUpdateEventArgs eventData
+				#endif
+			)
+				{
+		// start your code inside region MethodCode - DO NOT CHANGE CODE ABOVE
+		#region MethodCode
+    
+		#endregion MethodCode
+		// end your code inside region MethodCode - DO NOT CHANGE CODE BELOW
+				}
+			}
+		}
+				]]>
+		</source_code>
+		 <test_code><![CDATA[using System;
+		using System.IO;
+		using Aras.IOM;
+		using NSubstitute;
+		using NUnit.Framework;
+
+		namespace $(pkgname)
+		{
+			[TestFixture]
+			public class $(pkgname)Tests
+			{
+
+			}
+		}]]></test_code>
+	</simple_code>
+</default_code_template>

@@ -3,7 +3,7 @@
   <Metadata>
     <Identity Id="-1" Version="1.0" Language="en-US" Publisher="Company" />
     <DisplayName>SP8 Method Template</DisplayName>
-    <Description xml:space="preserve">Project gor creating C# method for Aras Innovator</Description>
+    <Description xml:space="preserve">Project for creating C# method for Aras Innovator</Description>
     <Icon>aras.ico</Icon>
     <PreviewImage>Aras_A_300.png</PreviewImage>
   </Metadata>
