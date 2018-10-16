@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <default_code_template templateName="CSharpInOut" eventData="OnRefuse">
 	<wrapper_code>
-    <![CDATA[$(pkgname)ItemMethod(innovatorObjectArg, inDom, outDom, RequestState
+    <![CDATA[$(pkgname)ItemMethod(InnovatorServerASP, inDom, outDom, RequestState
         #if EventDataIsAvailable
 			    ,eventData
         # endif
@@ -29,7 +29,7 @@
 			{
 				[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1059:MembersShouldNotExposeCertainConcreteTypes", MessageId = "System.Xml.XmlNode")]
 				[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Performance", "CA1822:MarkMembersAsStatic")]
-				public void $(pkgname)ItemMethod(IServerConnection innovatorObjectArg, XmlDocument inDom, XmlDocument outDom, 
+				public void $(pkgname)ItemMethod(IServerConnection InnovatorServerASP, XmlDocument inDom, XmlDocument outDom, 
 					Aras.Server.Core.IContextState RequestState
 				#if EventDataIsAvailable
 			      ,Aras.Workflow.OnRefuseEventArgs eventData

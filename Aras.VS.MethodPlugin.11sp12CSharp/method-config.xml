@@ -383,15 +383,16 @@ namespace $(pkgname)
   
     public class $(clsname): $(interfacename)
     {
+       [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming", "CA1725:ParameterNamesShouldMatchBaseDeclaration", MessageId = "0#")]
 #if EventDataIsAvailable
-        public void $(fncname)(IServerConnection innovatorObjectArg, XmlDocument inDom, $(EventDataClass) eventData, XmlDocument outDom)
+        public void $(fncname)(IServerConnection InnovatorServerASP, XmlDocument inDom, $(EventDataClass) eventData, XmlDocument outDom)
 #else
-        public void $(fncname)(IServerConnection innovatorObjectArg, XmlDocument inDom, XmlDocument outDom)
+        public void $(fncname)(IServerConnection InnovatorServerASP, XmlDocument inDom, XmlDocument outDom)
 #endif
         {
         ItemMethod inItem = null;
         Item outItem = null;
-        inItem = new ItemMethod(innovatorObjectArg);
+        inItem = new ItemMethod(InnovatorServerASP);
         if (inDom != null)
         {
             inItem.dom = inDom;
@@ -452,8 +453,9 @@ namespace $(pkgname)
 		  }
 	  }
 
+    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming", "CA1725:ParameterNamesShouldMatchBaseDeclaration", MessageId = "0#")]
 		public void $(fncname)(
-			IServerConnection innovatorObjectArg,
+			IServerConnection InnovatorServerASP,
 			XmlDocument inDom,
 #if EventDataIsAvailable
 			$(EventDataClass) eventData,
@@ -461,7 +463,7 @@ namespace $(pkgname)
 			XmlDocument outDom
 			)
     {
-		Aras.Server.Core.IContextState RequestState = ((Aras.Server.Core.IOMConnection) innovatorObjectArg).CCO.RequestState;
+		Aras.Server.Core.IContextState RequestState = ((Aras.Server.Core.IOMConnection) InnovatorServerASP).CCO.RequestState;
 		$(MethodCode)
     }
   }
