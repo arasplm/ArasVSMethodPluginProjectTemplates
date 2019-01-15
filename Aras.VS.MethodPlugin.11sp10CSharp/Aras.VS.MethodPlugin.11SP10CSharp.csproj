@@ -35,10 +35,6 @@
     <CodeAnalysisRuleSet>Rulesets\Aras.All.Rules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aras.Analyzers, Version=1.0.0.1, Culture=neutral, PublicKeyToken=2c179e07b0395376, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>ArasLibs\Aras.Analyzers.dll</HintPath>
-    </Reference>
     <Reference Include="Aras.ES, Version=11.0.0.6549, Culture=neutral, PublicKeyToken=524d880b05474146, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>ArasLibs\Aras.ES.dll</HintPath>
@@ -98,7 +94,6 @@
     <None Include="Rulesets\Aras.All.Rules.ruleset" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ArasLibs\Aras.Analyzers.dll" />
     <Content Include="ArasLibs\Aras.ES.dll" />
     <Content Include="ArasLibs\Aras.TDF.Base.dll" />
     <Content Include="ArasLibs\Conversion.Base.dll" />
