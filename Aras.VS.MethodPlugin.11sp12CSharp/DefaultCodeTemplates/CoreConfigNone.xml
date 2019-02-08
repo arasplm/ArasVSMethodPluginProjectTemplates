@@ -1,24 +1,5 @@
 ﻿<default_code_template templateName="CSharp:Aras.Server.Core.Configurator" eventData="None">
- <wrapper_code><![CDATA[public override Scope BuildScope()
-{
-    throw new NotImplementedException();
-}
-
-public override ArrayList GetCustomKey()
-{
-    throw new NotImplementedException();
-}
-
-public override string[] GetGuidsItemDependsOn()
-{
-    throw new NotImplementedException();
-}
-
-[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1002:DoNotExposeGenericLists")]
-public override List<string> GetItemTypeNamesItemDependsOn()
-{
-    throw new NotImplementedException();
-}]]></wrapper_code>
+ <wrapper_code><![CDATA[]]></wrapper_code>
  <simple_code>
   <source_code><![CDATA[using System;
 using System.IO;
