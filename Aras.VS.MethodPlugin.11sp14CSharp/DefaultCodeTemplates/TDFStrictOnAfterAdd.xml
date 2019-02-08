@@ -20,7 +20,7 @@ namespace $(pkgname)
 {
 	public partial class $(clsname)
 	{
-		public static void $(pkgname)GenerateContent(DocumentSchemaElement targetElement, Aras.TDF.Base.SchemaElementExecutionContext executionContext)
+		public void $(pkgname)GenerateContent(DocumentSchemaElement targetElement, Aras.TDF.Base.SchemaElementExecutionContext executionContext)
 		{
 // start your code inside region MethodCode - DO NOT CHANGE CODE ABOVE
 #region MethodCode
