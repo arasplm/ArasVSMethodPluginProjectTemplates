@@ -600,7 +600,7 @@ End Namespace
 ]]>
 	</Template>
 
-	<Template name="ConflictDetectionLocalRuleCSharp.version:1" line_number_offset="19">
+	<Template name="ConflictDetectionLocalRuleCSharp.version:1" line_number_offset="19" isSupported="False" message="Current template is not successfully supported.">
 		<![CDATA[
 using System;
 using System.IO;
@@ -694,7 +694,7 @@ namespace $(pkgname)
 }
 ]]>
 	</Template>
-	<Template name="CSharp:Aras.TDF.ContentGenerator(Extended)" line_number_offset="19">
+	<Template name="CSharp:Aras.TDF.ContentGenerator(Extended)" line_number_offset="19" isSupported="False" message="Current template is not successfully supported.">
 		<![CDATA[
 using System;
 using System.IO;
