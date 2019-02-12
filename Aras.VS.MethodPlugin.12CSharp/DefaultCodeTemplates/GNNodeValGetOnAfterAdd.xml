@@ -1,0 +1,45 @@
+﻿<default_code_template templateName="CSharp:Aras.Server.Core.GraphNavigation.NodeValuesGetter" eventData="OnAfterAdd">
+ <wrapper_code><![CDATA[]]></wrapper_code>
+ <simple_code>
+  <source_code><![CDATA[using System;
+using System.IO;
+using System.Xml;
+using System.Text;
+using System.Collections;
+using System.Collections.Generic;
+using System.Data;
+using System.Linq;
+using System.Net;
+using System.Globalization;
+using Aras.IOM;
+using Aras.Server.Core;
+using Aras.Server.Core.GraphNavigation;
+using Aras.I18NUtils;
+
+namespace $(pkgname)
+{
+    public partial class $(clsname)
+    {
+// start your code inside region MethodCode - DO NOT CHANGE CODE ABOVE
+#region MethodCode
+
+#endregion MethodCode
+// end your code inside region MethodCode - DO NOT CHANGE CODE BELOW
+    }
+}]]></source_code>
+  <test_code><![CDATA[using System;
+using System.IO;
+using Aras.IOM;
+using NSubstitute;
+using NUnit.Framework;
+
+namespace $(pkgname)
+{
+    [TestFixture]
+    public class $(pkgname)Tests
+    {
+
+	}
+}]]></test_code>
+ </simple_code>
+</default_code_template>
