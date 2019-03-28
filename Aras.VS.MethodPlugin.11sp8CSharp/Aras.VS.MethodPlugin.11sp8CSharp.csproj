@@ -86,8 +86,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Attributes\ExternalPathAttribute.cs" />
     <Compile Include="GlobalSuppressions.cs" />
-    <Compile Include="PartialPathAttribute.cs" />
+    <Compile Include="Attributes\PartialPathAttribute.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
