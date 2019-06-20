@@ -1,5 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <projectinfo>
+		<MethodsFolderPath>ServerMethods</MethodsFolderPath>
+		<MethodConfigPath>method-config.xml</MethodConfigPath>
+		<IOMFilePath>ArasLibs\IOM.dll</IOMFilePath>
 		<lastSelectedDir></lastSelectedDir>
 		<connections>
 

@@ -383,7 +383,6 @@ namespace $(pkgname)
   
     public class $(clsname): $(interfacename)
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming", "CA1725:ParameterNamesShouldMatchBaseDeclaration", MessageId = "0#")]
 #if EventDataIsAvailable
         public void $(fncname)(IServerConnection InnovatorServerASP, XmlDocument inDom, $(EventDataClass) eventData, XmlDocument outDom)
 #else
@@ -440,8 +439,6 @@ namespace $(pkgname)
 {
   public class $(clsname): $(interfacename)
   {
-	  [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Performance", "CA1822:MarkMembersAsStatic")]
-	  [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
 	  private System.Web.HttpContext InnovatorContext
 	  {
 		  get
@@ -450,7 +447,6 @@ namespace $(pkgname)
 		  }
 	  }
 
-		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming", "CA1725:ParameterNamesShouldMatchBaseDeclaration", MessageId = "0#")]
 		public void $(fncname)(
 			IServerConnection InnovatorServerASP,
 			XmlDocument inDom,
@@ -598,7 +594,7 @@ End Namespace
 ]]>
 	</Template>
 
-	<Template name="ConflictDetectionLocalRuleCSharp.version:1" line_number_offset="19" isSupported="False" message="Current template is not successfully supported.">
+	<Template name="ConflictDetectionLocalRuleCSharp.version:1" line_number_offset="19">
 		<![CDATA[
 using System;
 using System.IO;
@@ -642,7 +638,6 @@ namespace $(pkgname)
 {
 public class $(clsname) : LocalConflictDetectionRule
 {
-	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
 	Aras.Server.Core.CallContext CCO;
 
 	public $(clsname)(IServerConnection serverConnection, String name)
@@ -692,7 +687,7 @@ namespace $(pkgname)
 }
 ]]>
 	</Template>
-	<Template name="CSharp:Aras.TDF.ContentGenerator(Extended)" line_number_offset="19" isSupported="False" message="Current template is not successfully supported.">
+	<Template name="CSharp:Aras.TDF.ContentGenerator(Extended)" line_number_offset="19">
 		<![CDATA[
 using System;
 using System.IO;
@@ -903,9 +898,7 @@ namespace $(pkgname)
 {
 	public class $(clsname) : IEnvironmentAttributeMethod
 	{
-		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
 		private readonly Aras.Server.Core.CallContext CCO;
-		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
 		private readonly Innovator Innovator;
 
 		public $(clsname)(IServerConnection connection, Aras.Server.Core.CallContext callContext)
