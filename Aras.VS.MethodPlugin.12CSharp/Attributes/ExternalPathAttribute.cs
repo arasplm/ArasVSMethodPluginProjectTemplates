@@ -6,15 +6,22 @@ namespace Common.Attributes
 	public sealed class ExternalPathAttribute : Attribute
 	{
 		private readonly string path;
+		private readonly int index;
 
 		public string Path
 		{
 			get { return path; }
 		}
 
-		public ExternalPathAttribute(string path)
+		public int Index
+		{
+			get { return index; }
+		}
+
+		public ExternalPathAttribute(string path, int index)
 		{
 			this.path = path;
+			this.index = index;
 		}
 	}
 }
